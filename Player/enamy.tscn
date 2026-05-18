@@ -1,0 +1,149 @@
+[gd_scene format=3 uid="uid://cvew5i3cv6og1"]
+
+[ext_resource type="Script" uid="uid://blsjw5qp71u35" path="res://Player/enamy.gd" id="1_0ygla"]
+[ext_resource type="Texture2D" uid="uid://duj8ifp262e31" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 01.png" id="1_x4ew0"]
+[ext_resource type="Texture2D" uid="uid://dhr761228hhqw" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 02.png" id="2_0ygla"]
+[ext_resource type="Texture2D" uid="uid://ce0pl7d81ao73" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/08-Hit/Hit 04.png" id="2_rtbiw"]
+[ext_resource type="Texture2D" uid="uid://bvd1i1gevdyq" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 03.png" id="3_8i6x7"]
+[ext_resource type="Texture2D" uid="uid://bvg22jr6wqj6" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/08-Hit/Hit 03.png" id="3_ebrbm"]
+[ext_resource type="Texture2D" uid="uid://c7filr6re1tt1" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 04.png" id="4_87oqf"]
+[ext_resource type="Texture2D" uid="uid://ctgd055ct8bx3" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/08-Hit/Hit 01.png" id="4_pjpjg"]
+[ext_resource type="Texture2D" uid="uid://b5e25gl83afru" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 05.png" id="5_qi1hw"]
+[ext_resource type="Texture2D" uid="uid://bwbg4vljfaicc" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 06.png" id="6_2hv4b"]
+[ext_resource type="Texture2D" uid="uid://btvwxjxpd2k28" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 07.png" id="7_i61tv"]
+[ext_resource type="Texture2D" uid="uid://cq1mabycojk07" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 08.png" id="8_rtbiw"]
+[ext_resource type="Texture2D" uid="uid://cfjmmtj3egaus" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 01.png" id="9_ebrbm"]
+[ext_resource type="Texture2D" uid="uid://dkrx6anqay4nc" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 02.png" id="10_pjpjg"]
+[ext_resource type="Texture2D" uid="uid://5wer8w4whcn6" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/03-Jump/Jump 01.png" id="10_qi1hw"]
+[ext_resource type="Texture2D" uid="uid://78kvmhwfaptg" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/03-Jump/Jump 02.png" id="11_2hv4b"]
+[ext_resource type="Texture2D" uid="uid://bq8688oo356hd" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 03.png" id="11_rki5g"]
+[ext_resource type="Texture2D" uid="uid://dness3y2m2cei" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 04.png" id="12_7vc34"]
+[ext_resource type="Texture2D" uid="uid://600kxxrc3c0m" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/03-Jump/Jump 03.png" id="12_i61tv"]
+[ext_resource type="Texture2D" uid="uid://rlsdj2f8q88o" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 05.png" id="13_ir5nm"]
+[ext_resource type="Texture2D" uid="uid://cx0ftsdl71qw5" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 06.png" id="14_5tvth"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qi1hw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_rtbiw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ebrbm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pjpjg")
+}],
+"loop": false,
+"name": &"death",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_x4ew0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0ygla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8i6x7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_87oqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qi1hw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2hv4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_i61tv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rtbiw")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_qi1hw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2hv4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_i61tv")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_ebrbm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_pjpjg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_rki5g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_7vc34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ir5nm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_5tvth")
+}],
+"loop": false,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_27ix5"]
+radius = 5.0
+height = 18.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rtbiw"]
+radius = 93.04838
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ebrbm"]
+size = Vector2(23, 13)
+
+[node name="Enamy" type="CharacterBody2D" unique_id=1884941508]
+script = ExtResource("1_0ygla")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=751937487]
+sprite_frames = SubResource("SpriteFrames_qi1hw")
+animation = &"death"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1878898832]
+shape = SubResource("CapsuleShape2D_27ix5")
+
+[node name="PlayerDetection" type="Area2D" parent="." unique_id=52658583]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection" unique_id=708023142]
+shape = SubResource("CircleShape2D_rtbiw")
+
+[node name="PlayerHurt" type="Area2D" parent="." unique_id=1899043982]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerHurt" unique_id=1110328419]
+position = Vector2(0.5, 3.5)
+shape = SubResource("RectangleShape2D_ebrbm")
+
+[node name="EnemyDeath" type="Area2D" parent="." unique_id=1590838101]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="EnemyDeath" unique_id=1313873192]
+scale = Vector2(0.96874994, 1)
+build_mode = 1
+polygon = PackedVector2Array(7.225807, -11, -5.1612906, -11, 0, -1)
+
+[connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="PlayerDetection" to="." method="_on_player_detection_body_exited"]
+[connection signal="body_entered" from="PlayerHurt" to="." method="_on_player_hurt_body_entered"]
+[connection signal="body_entered" from="EnemyDeath" to="." method="_on_enemy_death_body_entered"]

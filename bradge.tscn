@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ug7shgths26e"]
+
+[ext_resource type="Texture2D" uid="uid://3fkw3lxvc4ki" path="res://Treasure Hunters/platforms.png" id="1_tkyfb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dysto"]
+size = Vector2(32, 8)
+
+[node name="Breadge" type="AnimatableBody2D" unique_id=2067778453]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1031448939]
+texture = ExtResource("1_tkyfb")
+region_enabled = true
+region_rect = Rect2(16, 0, 32, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=257203087]
+shape = SubResource("RectangleShape2D_dysto")
+one_way_collision = true

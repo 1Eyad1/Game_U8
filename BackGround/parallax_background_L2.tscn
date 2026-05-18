@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://gectjsss0agm"]
+
+[ext_resource type="Texture2D" uid="uid://cx1p1pp4ex3w1" path="res://Treasure Hunters/BG2.jpg" id="1_pv30k"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" unique_id=256695644]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="." unique_id=346687361]
+motion_mirroring = Vector2(1170, 0)
+
+[node name="Bg2" type="Sprite2D" parent="ParallaxLayer" unique_id=1012864031]
+position = Vector2(557, 339)
+scale = Vector2(0.6109376, 0.8145834)
+texture = ExtResource("1_pv30k")

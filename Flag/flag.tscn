@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://dypw6hxs6hlda"]
+
+[ext_resource type="Texture2D" uid="uid://n1vibb36vp65" path="res://Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 01.png" id="1_ukavo"]
+[ext_resource type="Texture2D" uid="uid://66u03uyjiwuy" path="res://Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 02.png" id="2_ila72"]
+[ext_resource type="Texture2D" uid="uid://cxnsbwe3ohvpm" path="res://Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 03.png" id="3_lg6av"]
+[ext_resource type="Texture2D" uid="uid://put5lq1nrnq3" path="res://Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 04.png" id="4_bmw8x"]
+[ext_resource type="Texture2D" uid="uid://bibfb3qtecns5" path="res://Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 05.png" id="5_afu02"]
+[ext_resource type="Texture2D" uid="uid://b7lrkabk0ggfu" path="res://Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 06.png" id="6_ede3g"]
+[ext_resource type="Texture2D" uid="uid://cgkfqx8846pmg" path="res://Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 07.png" id="7_k7hah"]
+[ext_resource type="Texture2D" uid="uid://ccnoq4dhfok1r" path="res://Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 08.png" id="8_qyv1j"]
+[ext_resource type="Texture2D" uid="uid://chjr1ivbrcv1i" path="res://Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 09.png" id="9_cpea0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a4nny"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ukavo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ila72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lg6av")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_bmw8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_afu02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ede3g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_k7hah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qyv1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_cpea0")
+}],
+"loop": true,
+"name": &"Flag",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dnf1w"]
+size = Vector2(20, 50)
+
+[node name="Flag" type="Area2D" unique_id=404000378]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=141379659]
+position = Vector2(-5, -19)
+sprite_frames = SubResource("SpriteFrames_a4nny")
+animation = &"Flag"
+autoplay = "Flag"
+frame_progress = 0.47757015
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=6278605]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_dnf1w")
