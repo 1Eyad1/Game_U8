@@ -13,7 +13,9 @@ config_version=5
 config/name="Game1"
 run/main_scene="uid://bxock6sdrluhi"
 config/features=PackedStringArray("4.6", "Forward Plus")
+boot_splash/show_image=false
 config/icon="uid://8xmditvhpa0k"
+run/show_image=true
 
 [autoload]
 
