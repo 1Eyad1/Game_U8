@@ -1,0 +1,133 @@
+[gd_scene format=3 uid="uid://cnkb0gpltgstj"]
+
+[ext_resource type="Texture2D" uid="uid://cx1p1pp4ex3w1" path="res://Treasure Hunters/BG2.jpg" id="1_nhkf3"]
+[ext_resource type="Script" uid="uid://c2ffhkoa1melt" path="res://MainMenu/button.gd" id="2_5de1l"]
+[ext_resource type="Script" uid="uid://byk1uec1d56p8" path="res://MainMenu/button_2.gd" id="3_ajn5b"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3w4mj"]
+texture = ExtResource("1_nhkf3")
+modulate_color = Color(0.641934, 0.641934, 0.641934, 0.9607843)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ewecu"]
+bg_color = Color(0.44477126, 0.60134745, 0.86792266, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3w4mj"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nhkf3"]
+bg_color = Color(0.916456, 0.39476678, 0.583559, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5de1l"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ajn5b"]
+bg_color = Color(0.85425526, 0.38933992, 0.8197272, 1)
+
+[node name="MainMenu" type="Control" unique_id=690291249]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=1685609703]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_3w4mj")
+
+[node name="Button" type="Button" parent="." unique_id=321543238]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.34
+anchor_top = 0.79300004
+anchor_right = 0.34
+anchor_bottom = 0.79300004
+offset_left = -96.67999
+offset_top = -21.864014
+offset_right = 96.32001
+offset_bottom = 22.135986
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8110393, 0.8897841, 0.9295426, 1)
+theme_override_colors/font_outline_color = Color(0.6039216, 0.74074477, 0.94955426, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ewecu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3w4mj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nhkf3")
+text = "Start Game"
+script = ExtResource("2_5de1l")
+
+[node name="Button2" type="Button" parent="." unique_id=2006280635]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 82.0
+offset_top = 188.0
+offset_right = 275.0
+offset_bottom = 232.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8110393, 0.8897841, 0.9295426, 1)
+theme_override_colors/font_outline_color = Color(0.6039216, 0.74074477, 0.94955426, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ewecu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5de1l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nhkf3")
+text = "Exit Game"
+script = ExtResource("3_ajn5b")
+
+[node name="Label" type="Label" parent="." unique_id=1671397403]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.521
+anchor_top = 0.41700003
+anchor_right = 0.521
+anchor_bottom = 0.41700003
+offset_left = -170.19202
+offset_top = -17.216003
+offset_right = 170.80798
+offset_bottom = 17.783997
+theme_override_colors/font_color = Color(1.3518142, 1.4626822, 0, 1)
+theme_override_colors/font_shadow_color = Color(2.7284539, 2.7284539, 2.7284539, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 6
+theme_override_constants/shadow_offset_x = 9
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/shadow_outline_size = 4
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_ajn5b")
+text = "Captin Clown Adventure"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]

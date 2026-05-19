@@ -11,11 +11,12 @@ config_version=5
 [application]
 
 config/name="Game1"
-run/main_scene="uid://bxock6sdrluhi"
+run/main_scene="uid://cnkb0gpltgstj"
 config/features=PackedStringArray("4.6", "Forward Plus")
 boot_splash/show_image=false
 config/icon="uid://8xmditvhpa0k"
 run/show_image=true
+run/quit_on_go_back=true
 
 [autoload]
 
