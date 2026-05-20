@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bxock6sdrluhi"]
 
+[ext_resource type="Script" uid="uid://dub06rhmlv0xn" path="res://health_timer.gd" id="1_dxbti"]
 [ext_resource type="Texture2D" uid="uid://d2uvthwun3cmg" path="res://Treasure Hunters/world_tileset.png" id="1_u4yte"]
 [ext_resource type="PackedScene" uid="uid://cvew5i3cv6og1" path="res://Player/enamy.tscn" id="4_su4v7"]
 [ext_resource type="PackedScene" uid="uid://b8xj1pb4u70j1" path="res://Player/enamyStar.tscn" id="5_cnp70"]
@@ -249,6 +250,26 @@ animations = [{
 size = Vector2(20, 50)
 
 [node name="LevelOne" type="Node2D" unique_id=1321179747]
+
+[node name="HealthTimer" type="CanvasLayer" parent="." unique_id=1323675793]
+script = ExtResource("1_dxbti")
+
+[node name="Label" type="Label" parent="HealthTimer" unique_id=996359555]
+anchors_preset = -1
+anchor_left = 0.298
+anchor_right = 0.409
+anchor_bottom = 0.106000006
+offset_left = -0.2960205
+offset_right = -0.16799927
+offset_bottom = 0.31199646
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 0.46087164, 0.46168327, 1)
+theme_override_font_sizes/font_size = 50
+text = "00:00"
+
+[node name="Timer" type="Timer" parent="HealthTimer" unique_id=584423051]
+wait_time = 120.0
+one_shot = true
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1989216155]
 position = Vector2(611, 281)

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://0oig07j6rerw"]
+
+[ext_resource type="Script" uid="uid://dub06rhmlv0xn" path="res://health_timer.gd" id="1_elh3w"]
+
+[node name="HealthTimer" type="CanvasLayer" unique_id=1426374827]
+script = ExtResource("1_elh3w")
+
+[node name="Label" type="Label" parent="." unique_id=996359555]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -128.0
+offset_bottom = 69.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 0.46087164, 0.46168327, 1)
+theme_override_font_sizes/font_size = 50
+text = "00:00"
+
+[node name="Timer" type="Timer" parent="." unique_id=584423051]
+wait_time = 120.0
+one_shot = true
